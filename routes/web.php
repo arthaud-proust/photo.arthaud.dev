@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Auth::routes(['verify'=> false, 'forgot' => false, 'register' => true]);
+Auth::routes(['verify'=> false, 'forgot' => false, 'register' => false]);
 Route::get('/', 'GalleryController@index');
 
 
