@@ -1,0 +1,1 @@
+Si vous êtes impatient vous pouvez m'envoyer un <a target="blank" href="https://instagram.com/arthau.d" data-toggle="tooltip" data-placement="top" title="@arthaud">message</a> ou un <a target="blank" href="mailto:contact@arthaud.dev" data-toggle="tooltip" data-placement="top" title="contact@arthaud.dev">mail</a>

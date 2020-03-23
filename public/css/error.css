@@ -1,0 +1,15 @@
+.display-5 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+
+.btn {
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) { 
+    .display-5 {
+        font-size: 1.3rem;
+    }
+}
