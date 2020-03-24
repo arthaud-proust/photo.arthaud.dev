@@ -98,7 +98,7 @@ class GalleryController extends Controller
 
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
-            'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
+            'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp',
         ]);
         if ($validator->fails()) {
             //on retourne l'erreur
@@ -106,6 +106,7 @@ class GalleryController extends Controller
         }
 
         if($request->img) {
+            File::delete(public_path().$gallery->preview);
             $imageName = $request->get('name').'.'.request()->img->getClientOriginalExtension();
             request()->img->move(public_path('preview'), $imageName);
 
