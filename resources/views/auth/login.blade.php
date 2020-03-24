@@ -74,4 +74,6 @@
         </div>
     </div>
 </div>
+<script src="/js/admin.js" defer></script>
+
 @endsection

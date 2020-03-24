@@ -3,6 +3,18 @@ main {
     min-height: calc( 100vh - 100px);
 }
 
+img {
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    -o-pointer-events: none;
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    -o-user-select: none;
+    user-select: none;
+}
 
 .card{
     transition: .4s;

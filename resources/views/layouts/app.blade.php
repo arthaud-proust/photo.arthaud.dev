@@ -94,9 +94,10 @@
         <link href="/css/master.css" rel="stylesheet">
         @endif
 
+        <script src="/js/main.js" defer></script>
+
         <!-- <script src="/js/jquery.min.js"></script> -->
         <!-- <script src="/js/jquery.imageloader.js" defer></script> -->
-        <!-- <script src="/js/meta.js" defer></script> -->
     </head>
     <body>
         @if (Auth::check())

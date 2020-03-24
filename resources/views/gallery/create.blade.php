@@ -42,6 +42,7 @@
         <a class="btn btn-link-dark" href="/">Annuler</a>
     </form>
 </main>
+<script src="/js/admin.js" defer></script>
 
 
 @endsection

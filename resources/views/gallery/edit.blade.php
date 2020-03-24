@@ -49,6 +49,7 @@
             <button class="btn btn-outline-danger float-right" type="submit">Supprimer (irréversible)</button>
         </form>
 </main>
+<script src="/js/admin.js" defer></script>
 
 
 @endsection

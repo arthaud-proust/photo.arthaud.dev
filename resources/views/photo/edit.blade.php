@@ -63,6 +63,7 @@
         <button class="btn btn-outline-danger float-right" type="submit">Supprimer la photo</button>
     </form>
 </main>
+<script src="/js/admin.js" defer></script>
 
 
 @endsection

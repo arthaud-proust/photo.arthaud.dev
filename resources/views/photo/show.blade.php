@@ -30,6 +30,8 @@
         </div>
     </div>
 </main>
+
+
 @endsection
 
 @section('nofooter', '')

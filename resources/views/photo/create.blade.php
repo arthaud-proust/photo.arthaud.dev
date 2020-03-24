@@ -68,6 +68,7 @@
         <a class="btn btn-link-dark" href="/{{$request->get('gallery')}}">Annuler</a>
     </form>
 </main>
+<script src="/js/admin.js" defer></script>
 
 
 @endsection
