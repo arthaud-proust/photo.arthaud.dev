@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', "Galleries")
+@section('title', "Les galleries")
 @section('header', "")
 
 @section('view')
