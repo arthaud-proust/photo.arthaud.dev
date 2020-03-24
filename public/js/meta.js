@@ -96,11 +96,11 @@ $(()=>{
   $('#name').keyup((e)=>{
       $('#slug').val( removeDiacritics($('#name').val()).replace(/\W|\s+|-+/g, "-").toLowerCase() );
   })
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+  // $(function () {
+  //   $('[data-toggle="tooltip"]').tooltip()
+  // })
 
-  $('img').imageloader();
+  // $('img').imageloader();
 });
 
 

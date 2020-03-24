@@ -33,7 +33,8 @@
         @foreach ($photos as $photo)
         <div class="col-sm-4 py-3">
             <article class="card xs">
-                <img class="card-img-top" src="/res/blank.png" data-src="{{$photo->src}}" alt="Card image cap">
+                <!-- <img class="card-img-top" src="/res/blank.png" data-src="{{$photo->src}}" alt="Card image cap"> -->
+                <img class="card-img-top" src="{{$photo->src}}" alt="Card image cap">
                 <div class="card-body">
                     @if($photo->name)<h5 class="card-title"><a href="/{{$gallery->slug}}" class="text-dark">{{$photo->name}}</a></h5>@endif
                     @if($photo->text)<p class="card-text">{{$photo->text}}</p>@endif

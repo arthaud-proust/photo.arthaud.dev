@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', $photo->name? $photo->name : "Image")
+@section('style', 'photo')
 
 @section('header', '')
 

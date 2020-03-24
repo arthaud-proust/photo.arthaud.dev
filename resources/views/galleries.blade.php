@@ -18,7 +18,8 @@
         @foreach($galleries as $gallery)
             <div class="col-sm-4 mt-4">
                 <article class="card xs m-2 gallery">
-                    <img class="card-img-top" src="/res/blank.png" data-src="{{ $gallery->preview }}" alt="Card image cap">
+                    <!-- <img class="card-img-top" src="/res/blank.png" data-src="{{ $gallery->preview }}" alt="Card image cap"> -->
+                    <img class="card-img-top" src="{{ $gallery->preview }}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title"><a href="/{{$gallery->slug}}" class="text-dark">{{$gallery->name}}</a></h5>
                         <a href="/{{$gallery->slug}}" class="card-link">Regarder</a>
