@@ -55,13 +55,12 @@ class GalleryController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|unique:gallery|string|max:255',
             'slug' => 'required|unique:gallery|string|max:255',
-            'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp',
+            'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp,jfif',
         ]);
         if ($validator->fails()) {
             //on retourne l'erreur
             return back()->withInput()->withErrors($validator);
         }
-
         
         $imageName = $request->get('name').'.'.request()->img->getClientOriginalExtension();
         request()->img->move(public_path('preview'), $imageName);
@@ -98,7 +97,7 @@ class GalleryController extends Controller
 
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
-            'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp',
+            'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp,jfif',
         ]);
         if ($validator->fails()) {
             //on retourne l'erreur

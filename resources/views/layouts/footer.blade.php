@@ -17,7 +17,7 @@
             <h2 class="mt-2">Me suivre</h2>
             <div class="col-md-5 row">
                 <ul class="list">
-                    <li><a target="blank" href="https://github.com/arthaud33/">GitHub</a></li>
+                    <li><a target="blank" href="https://github.com/arthaud-proust/">GitHub</a></li>
                     <li><a target="blank" href="https://fr.linkedin.com/in/arthaud-proust">Linkedin</a></li>
                     <li><a target="blank" href="https://instagram.com/arthau.d">Instagram</a></li>
                 </ul>
