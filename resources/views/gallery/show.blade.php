@@ -30,7 +30,7 @@
     
 
     <div class="row">
-        @foreach ($photos as $photo)
+        @foreach ($photos->reverse() as $photo)
         <div class="col-sm-4 py-3">
             <article class="card xs">
                 <a href="/photo/{{$photo->slug}}" class="card-link">

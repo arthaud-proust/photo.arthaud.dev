@@ -14,8 +14,8 @@
             <button type="submit" class="btn btn-link" href="/">Se déconnecter</button>
         </form>
         @endif
-        <div class="row">
-        @foreach($galleries as $gallery)
+        <div class="row ">
+        @foreach($galleries->reverse() as $gallery)
             <div class="col-sm-4 mt-4">
                 <article class="card xs m-2 gallery">
                     <a href="/{{$gallery->slug}}" class="card-link">
