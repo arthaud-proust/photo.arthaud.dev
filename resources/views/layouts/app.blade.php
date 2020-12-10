@@ -104,7 +104,6 @@
             @if(View::hasSection('header'))
                 @yield('header')
             @else
-                @include('layouts.header')
             @endif
         @endif
         

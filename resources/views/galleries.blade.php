@@ -18,14 +18,14 @@
         @foreach($galleries as $gallery)
             <div class="col-sm-4 mt-4">
                 <article class="card xs m-2 gallery">
-                    <!-- <img class="card-img-top" src="/res/blank.png" data-src="{{ $gallery->preview }}" alt="Card image cap"> -->
-                    <img class="card-img-top" src="{{ $gallery->preview }}" alt="Card image cap">
+                    <a href="/{{$gallery->slug}}" class="card-link">
+                        <!-- <img class="card-img-top" src="/res/blank.png" data-src="{{ $gallery->preview }}" alt="Card image cap"> -->
+                        <img class="card-img-top" src="{{ $gallery->preview }}" alt="Card image cap">
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title"><a href="/{{$gallery->slug}}" class="text-dark">{{$gallery->name}}</a></h5>
-                        <a href="/{{$gallery->slug}}" class="card-link">Regarder</a>
-                        @if (Auth::check())
-                        <a href="/gallery/{{$gallery->slug}}/edit" class="card-link text-success">Editer</a>
-                        @endif
+                        <a href="/{{$gallery->slug}}" class="card-link">Voir</a>
+                        @if (Auth::check())<a href="/gallery/{{$gallery->slug}}/edit" class="card-link text-success">Editer</a>@endif
                     </div>
                 </article>
             </div>

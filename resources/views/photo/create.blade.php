@@ -41,13 +41,6 @@
         </div>
         <div class="form-row">
             <div class="col-md-4 mb-3">
-                <label for="slug">Slug</label>
-                <input type="text" class="form-control {{$errors->first('slug') ? 'is-invalid':''}}" id="slug" name="slug" placeholder="ex: portrait-dombres" value="{{ old('slug') }}" required>
-                <div class="invalid-feedback">
-                    {{$errors->first('slug')}}
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
                 <label for="name">Nom (optionnel)</label>
                 <input type="text" class="form-control {{$errors->first('name') ? 'is-invalid':''}}" id="name" name="name" placeholder="ex: Portrait d'Ombres" value="{{ old('name') }}">
                 <div class="invalid-feedback">

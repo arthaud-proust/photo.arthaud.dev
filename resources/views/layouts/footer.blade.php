@@ -2,8 +2,8 @@
     <div class="row justify-content-center">
         <div class="col-md-4 footer-brand">
             <h2>À propos</h2>
-            <p>Je ne dirai pas que je suis passionné par la photo, seulement que j'aime en prendre pour retranscrire mon point de vue. Ce coté paparazzi m'a été transmis par mon <a href="https://instagram.com/lubbock_photo" target="blank">père</a> que je dirai plus qu'amateur.</p>
-            <p> Au-delà du plaisir à prendre ces photos, j'aime les retoucher, faire éclater les couleurs, assombrir, éclaircir, réaliser un travail qui va faire accrocher le regard de l'observateur sur certains détails. Mais pour cela encore faut-il avoir des photos bien exposés: c'est pourquoi j'ai créé cette gallerie photo.</p>
+            <p>Je ne dirai pas que je suis passionné par la photo, seulement que j'aime en prendre pour retranscrire mon point de vue. Ce coté paparazzi m'a été transmis par mon <a href="https://instagram.com/lubbock_photo" target="blank">père</a>, plus qu'amateur.</p>
+            <p> Au-delà du plaisir à prendre ces photos, j'aime les retoucher, faire éclater les couleurs, assombrir, éclaircir, réaliser un travail qui va faire accrocher le regard de l'observateur sur certains détails. Mais pour cela encore faut-il avoir des photos bien exposées: c'est l'essence de ce site.</p>
             <p>© 2020 Tous droits réservés <a href="https://arthaud.dev">Arthaud.dev</a></p>
         </div>
         <div class="col-md-3 footer-social">

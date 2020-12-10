@@ -33,7 +33,7 @@ class PhotoController extends Controller
 
     public function show($slug) {
 
-        if (! $photo = photo::where('slug', $slug)->first())
+        if (! $photo = photo::firstWhere('slug', $slug))
         {
             abort(404, 'photo');
         }
@@ -56,7 +56,6 @@ class PhotoController extends Controller
 
         $validator = Validator::make($request->all(), [
             'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp',
-            'slug' => 'required|unique:photos|string|max:255',
             'gallery' => 'required|string|max:255',
             'background' => 'required|string|max:255',
             'name' => 'nullable|unique:photos|string|max:255',
@@ -76,7 +75,7 @@ class PhotoController extends Controller
         request()->img->move(public_path('img'), $imageName);
 
         $photo = photo::create([
-            'slug'  => $request->get('slug'),
+            'slug'  => time(),
             'gallery' => $request->get('gallery'),
             'gallery_name' => $gallery->name,
             'background' => $request->get('background'),

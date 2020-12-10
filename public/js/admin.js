@@ -115,7 +115,9 @@ function removeDiacritics (str) {
     const slug = document.getElementById('slug');
 
     name.addEventListener('keyup', (e)=>{
-        slug.value = removeDiacritics(name.value).replace(/\W|\s+|-+/g, "-").toLowerCase();
+        try{
+            slug.value = removeDiacritics(name.value).replace(/\W|\s+|-+/g, "-").toLowerCase();
+        } catch(e) {}
     });
 })();
 
