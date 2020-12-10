@@ -16,7 +16,7 @@
                 <label for="img">Vignette</label>
                 <input type="file" class="form-control-file {{$errors->first('img') ? 'is-invalid':''}}" name="img" id="img">
                 <div class="invalid-feedback">
-                    {{$errors->first('slug')}}
+                    {{$errors->first('img')}}
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@
         <div class="form-row">
             <div class="col-md-4 mb-3">
                 <label for="img">Photo</label>
-                <input type="file" class="form-control-file {{$errors->first('img') ? 'is-invalid':''}}" name="img" id="img" required>
+                <input type="file" class="form-control-file {{$errors->first('img') ? 'is-invalid':''}}" name="img" id="img">
                 <div class="invalid-feedback">
                     {{$errors->first('img')}}
                 </div>
